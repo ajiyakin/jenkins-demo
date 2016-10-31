@@ -1,7 +1,8 @@
 version: '2'
 services:
     ra_jenkins:
-        image: jenkins:2.19.1
+        build: .
+        image: ra_jenkins:1.0
         container_name: ra_jenkins
         volumes:
             - ./jenkins_home:/var/jenkins_home
