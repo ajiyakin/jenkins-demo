@@ -1,0 +1,10 @@
+version: '2'
+services:
+    ra_jenkins:
+        image: jenkins:2.19.1
+        container_name: ra_jenkins
+        volumes:
+            - ./jenkins_home:/var/jenkins_home
+        ports:
+            - 8080:8080
+            - 50000:50000
