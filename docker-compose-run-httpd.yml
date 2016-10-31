@@ -1,0 +1,7 @@
+version: '2'
+services:
+    ra_httpd:
+        image: httpd:latest
+        container_name: ra_httpd
+        ports:
+            - 8081:80
